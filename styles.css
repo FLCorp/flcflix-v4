@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Coming Soon;
+    src: url(font/Coming\ Soon\ St.ttf);
+}
+@font-face {
+    font-family: netflix;
+    src: url(font/BebasNeue-Regular.ttf);
+}
+
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+header{
+    text-align: center;
+}
+
+img{
+    width: 800px;
+    margin: 50px;
+}
+
+.release{
+    text-align: center;
+    background: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #0003be, #00a733,  #00a733, #00a733, #00a733);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Coming Soon;
+    font-size: 5em;
+}
+
+.release-mobile{
+    display: none;
+    color: #fff;
+    font-family: netflix;
+    text-align: center;
+}
+
+.timer {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: netflix;
+    color: #00a733;
+}
+    
+.timer span {
+    margin: 0 5px;
+}
+  
+.timer-txt {
+    background: linear-gradient(to right, #ff0000,#0003be);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: netflix;
+    text-align: center;
+}
+  
+.timer-img{
+    text-align: center;
+    background-color: #000231;
+}
+  
+@media screen and (max-width : 768px){
+    img{
+        display: none;
+    }
+    .release{
+        display: none;
+    }
+    .release-mobile{
+        display: initial;
+    }
+    .timer {
+        display: none;
+    }
+}
